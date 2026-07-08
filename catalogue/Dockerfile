@@ -2,7 +2,7 @@ FROM node:20 AS builder
 WORKDIR /opt/server
 COPY *.js .
 COPY package.json .
-RUN install npm
+RUN npm install
 
 FROM node:20
 WORKDIR /opt/server
